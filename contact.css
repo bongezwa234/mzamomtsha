@@ -1,0 +1,287 @@
+/*HOME PAGE*/
+/* Flexbox1*/
+
+
+.MainPage{
+    display: flex;
+    background-color: white;
+}
+.Badge{
+    flex-grow: 0;
+}
+.Title {
+    
+    flex-grow: 1;
+    color:navy;
+    font-size: 80px;
+    margin-left: 30px;
+  }
+
+  sub{
+    margin-top: 40px;
+  }
+
+  
+.active, Menu div div:hover{
+  background-color: darkcyan;
+} 
+/* Flexbox2*/
+.Menu{
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    text-align: right;
+}
+
+.AboutUs:hover{
+  background-color: rgb(155, 155, 155);
+  border-radius: 3px;
+}
+
+.events:hover{
+  background-color: rgb(155, 155, 155);
+  border-radius: 3px;
+}
+.contactUs:hover{
+  background-color: rgb(155, 155, 155);
+  border-radius: 3px;
+}
+.home:hover{
+  background-color: rgb(155, 155, 155);
+  border-radius: 3px;
+}
+
+.home{
+    flex-grow: 0;
+    justify-content: flex-end;
+    
+}
+
+.AboutUs {
+   justify-content: flex-end;
+  }
+  .events {
+    justify-content: flex-end;
+  }
+  .Menu > div {
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+  }
+ 
+footer{
+  text-align: center;
+  image-orientation: initial;
+}
+
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.Message{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: aqua;
+  font-size: larger;
+}
+
+.container .Message{
+  position: absolute ;
+  bottom: 0px;
+  top: 100%;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 80%;
+  padding: 150px;
+}
+
+/*VISION AND MISSION*/
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  }
+
+ .text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color:black transparent;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+
+/*ABOUT US*/
+.box{
+  width: 500px;
+ 
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  margin-top: -28%;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*EVENTS*/
+    .Events p{
+      font-size: 20px;
+      text-align: left;
+      margin-top: initial;
+     
+    }
+    table, th, td {
+      border: 5px solid black;
+      border-collapse: collapse;
+  
+
+    }
+    th, td {
+      padding: 5px;
+      text-align: left;    
+    }
+/* Flexbox5*/
+img{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*button link*/
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color:  rgb(129, 184, 130);
+}
+
+
+/* FOOTER */
+ 
+footer{
+  padding-top: 30px;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icons img{
+  margin: 15px;
+}
+
+ h3{
+padding-top:  20px;
+margin: 10px;
+
+}
+
+p{
+  margin: 10px;
+}
+ 
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background: #fece0c;
+}
+
+.wrapper{
+    position: absolute;
+    top: 40%;
+    left:70%;
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgba(254,236,164,1);
+}
+
+.wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #332902;
+}
+
+.wrapper .input_field{
+    margin-bottom: 10px;
+}
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+.wrapper textarea{
+    height:80px;
+    resize: none;
+}
+.wrapper .btn input[type="submit"]{
+    border: 0;
+    margin-top: 15px;
+    padding:10px;
+    width: 100%;
+    background: #fece0c;
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.wrapper #error_message{
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
